@@ -21,7 +21,7 @@ html, body{
 }
 
 #main{
-    height: 65vh;
+    height: 68vh;
     width: 100%;
     background-color: #E8EEFF;
     display: flex;
@@ -31,7 +31,7 @@ html, body{
 }
 
 #footer{
-    height: 17vh;
+    height: 14vh;
     width: 100%;
     background-color: #111827;
     margin: 0px;
