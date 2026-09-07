@@ -14,8 +14,6 @@ function fetchUserDetails() {
     // API call to get user details
     $.get(`https://api.github.com/users/${username}`, function(data) {
         var name =  data.name;
-        var followers = data.followers;
-        var following = data.following;
 
     // Create the README template
 
@@ -50,16 +48,42 @@ function fetchUserDetails() {
 
     $('#content').append(container);
 
-    $(document.createElement('h1')).text(`Hi, I am ${name}`).css({
+    $(document.createElement('h1')).text(`Hi, I'm ${name}`).css({
         color: "white",
         textAlign: "center",
+        fontFamily: "sans-serif",
+        fontWeight: "500",
     }).appendTo(container);
 
-    $(document.createElement('img')).attr('src', 'https://raw.githubusercontent.com/SamirPaulb/SamirPaulb/main/assets/rainbow-superthin.webp').css({
+    var para = $(document.createElement('p')).css({
+        textAlign: "center",
+    });
+
+    $(document.createElement('img')).attr('src', `https://komarev.com/ghpvc/?username=${username}&label=Profile%20Views&color=0e75b6&style=flat-square`).css({
+        height: "21px",
+        marginRight: "5px",
+    }).appendTo(para);
+
+    $(document.createElement('img')).attr('src', `https://img.shields.io/github/followers/${username}?label=Followers&color=0e75b6&style=flat-square`).css({
+        height: "21px",
+        marginRight: "5px",
+    }).appendTo(para);
+
+    $(document.createElement('img')).attr('src', `https://img.shields.io/github/stars/${username}?label=Stars&color=0e75b6&style=flat-square`).css({
+        height: "21px",
+        marginRight: "5px",
+    }).appendTo(para);
+
+    $(document.createElement('img')).attr('src', `https://img.shields.io/github/forks/${username}/Software-Engineering?label=Forks&color=0e75b6&style=flat-square`).css({
+        height: "21px",
+        marginRight: "5px",
+    }).appendTo(para);
+
+    container.append(para);
+
+     $(document.createElement('img')).attr('src', 'https://raw.githubusercontent.com/SamirPaulb/SamirPaulb/main/assets/rainbow-superthin.webp').css({
         width: "100%",
     }).appendTo(container);
-
-    $(document.createElement('h2'))
 
     });
     
