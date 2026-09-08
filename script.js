@@ -85,7 +85,81 @@ function fetchUserDetails() {
         width: "100%",
     }).appendTo(container);
 
+    $(document.createElement('img')).attr('src', 'https://user-images.githubusercontent.com/74038190/229223156-0cbdaba9-3128-4d8e-8719-b6b4cf741b67.gif').css({
+        width: "40px",
+    }).appendTo(container);
+
+    var heading1 = $(document.createElement('h2')).text('About Me').css({
+        marginRight: "10px",
+        color: "white",
+        display: "inline",
     });
+
+    container.append(heading1);
+
+    $(document.createElement('hr')).css({
+        border: "1px solid white",
+        width: "100%",
+    }).appendTo(container);
+
+    var section1 = $(document.createElement('div')).css({
+        height: "auto",
+        width: "100%",
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "nowrap",
+        justifyContent: "space-between",
+    });
+
+    var section2 = $(document.createElement('div')).css({
+        height: "100%",
+    });
+
+    var ul = $(document.createElement('ul'));
+
+    var item1 = $('<li>').text('⭐ I’m a Software Engineer.').css('color', 'white');
+    var item2 = $('<li>').text('🚀 Passionate about Web Development.').css('color', 'white');
+    var item3 = $('<li>').text('💡 Interested in contributing to Open Source Projects.').css('color', 'white');
+    var item4 = $('<li>').text('💬 Ask me about Software Engineering.').css('color', 'white');
+    var item5 = $('<li>').text('🎯 Focus on Quality over Quantity').css('color', 'white');
+    var item6 = $('<li>').text('🔄 Repeat Brainstorming, Coding, and Debugging.').css('color', 'white');
+    var item7 = $('<li>').text('✨ Enjoy my GitHub profile.').css('color', 'white');
+
+    ul.append(item1);
+    ul.append(item2);
+    ul.append(item3);
+    ul.append(item4);
+    ul.append(item5);
+    ul.append(item6);
+    ul.append(item7);
+
+    section2.append(ul);
+
+    section1.append(section2);
+
+    $(document.createElement('img')).attr('src', 'https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif').css({
+        height: "180px",
+        width: "250px",
+        // align: "right",
+    }).appendTo(section1);
+
+    
+    container.append(section1);
+
+    $(document.createElement('img')).attr('src', 'https://user-images.githubusercontent.com/10498744/210012254-234538ff-d198-48aa-8964-37e6fd45d227.gif').css({
+        width: "100%",
+        height: "120px",
+    }).appendTo(container);
+
+    $(document.createElement('hr')).css({
+        border: "1px solid white",
+        width: "100%",
+    }).appendTo(container);
+
+    
+
+    });
+
     
 }
 
