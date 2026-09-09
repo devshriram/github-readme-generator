@@ -1,4 +1,25 @@
-function fetchUserDetails() {
+var outer = $('#content').css({
+    height: "100vh",
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    backgroundColor: "#C5D0F5",
+    margin: "0px",
+    padding: "0px",
+    });
+
+    var btn = $('<button>').text('Generate Code').attr('id', 'myBtn');
+
+    function generateCode() {
+
+    // Clear the DOM
+    outer.empty();
+}
+
+     btn.click(generateCode);
+
+    function fetchUserDetails() {
 
     // Get the username
     var username = $('#username').val();
@@ -9,24 +30,13 @@ function fetchUserDetails() {
     }
 
     // Clear the DOM
-    $('#content').empty();
+    outer.empty();
 
     // API call to get user details
     $.get(`https://api.github.com/users/${username}`, function(data) {
         var name =  data.name;
 
     // Create the README template
-
-    $('#content').css({
-        height: "100vh",
-        width: "100%",
-        display: "flex",
-        justifyContent: "center",
-        // alignItems: "center",
-        backgroundColor: "#C5D0F5",
-        margin: "0px",
-        padding: "0px",
-    });
 
     var container = $('<div>');
 
@@ -59,7 +69,7 @@ function fetchUserDetails() {
         textAlign: "center",
     });
 
-    $(document.createElement('img')).attr('src', `https://komarev.com/ghpvc/?username=${username}&label=Profile%20Views&color=0e75b6&style=flat-square`).css({
+    $(document.createElement('img')).attr('src', `https://komarev.com/ghpvc/?username=${username}&label=Following%20&color=0e75b6&style=flat-square`).css({
         height: "21px",
         marginRight: "5px",
     }).appendTo(para);
@@ -188,7 +198,25 @@ function fetchUserDetails() {
 
     container.append(skillIcon);
 
-    });    
+     $(document.createElement('img')).attr('src', 'https://raw.githubusercontent.com/SamirPaulb/SamirPaulb/main/assets/rainbow-superthin.webp').css({
+        width: "100%",
+    }).appendTo(container);
+
+    $(document.createElement('img')).attr('src', 'https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg').css({
+        height: "100px",
+        width: "100%",
+    }).appendTo(container);
+
+    btn.css({
+    height: "30px",
+    width: "150px",
+    color: "white",
+    marginTop: "45px",
+    backgroundColor: "black",
+    }).appendTo(outer);
+
+    }); 
+    
 }
 
 $('#button').click(fetchUserDetails);
