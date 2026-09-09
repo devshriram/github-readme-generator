@@ -151,16 +151,44 @@ function fetchUserDetails() {
         height: "120px",
     }).appendTo(container);
 
-    $(document.createElement('hr')).css({
+    $(document.createElement('img')).attr('src', 'https://raw.githubusercontent.com/SamirPaulb/SamirPaulb/main/assets/rainbow-superthin.webp').css({
+        width: "100%",
+    }).appendTo(container);
+
+     $(document.createElement('img')).attr('src', 'https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gi').css({
+        width: "40px",
+    }).appendTo(container);
+
+    var heading2 = $(document.createElement('h2')).text('Technical Skills').css({
+        marginRight: "10px",
+        color: "white",
+        display: "inline",
+    });
+
+    container.append(heading2);
+
+     $(document.createElement('hr')).css({
         border: "1px solid white",
         width: "100%",
     }).appendTo(container);
 
-    
-
+    var skillSection = $(document.createElement('div')).css({
+        height: "auto",
+        width: "100%",
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "wrap",
     });
 
-    
+    container.append(skillSection);
+
+    var skillIcon = $(document.createElement('a')).attr('href', 'https://skillicons.dev');
+
+    var skillIconImages = $(document.createElement('img')).attr('src', 'https://skillicons.dev/icons?i=html,css,js,docker,kubernetes,mongodb,express,nodejs,react,git,github').appendTo(skillIcon);
+
+    container.append(skillIcon);
+
+    });    
 }
 
 $('#button').click(fetchUserDetails);
