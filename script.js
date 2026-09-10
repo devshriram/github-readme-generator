@@ -11,13 +11,34 @@ var outer = $('#content').css({
 
     var btn = $('<button>').text('Generate Code').attr('id', 'myBtn');
 
+    btn.click(generateCode);
+
     function generateCode() {
 
     // Clear the DOM
     outer.empty();
-}
 
-     btn.click(generateCode);
+    var code = $(document.createElement('div')).css({
+        height: "80%",
+        width: "50vw",
+        backgroundColor: "#0D1117",
+        marginTop: "10vh",
+        color: "white",
+        overflow: "auto",
+        padding: "10px",
+        whiteSpace: "pre-wrap",
+    }).text('<img src="https://raw.githubusercontent.com/BEPb/BEPb/5c63fa170d1cbbb0b1974f05a3dbe6aca3f5b7f3/assets/Bottom_up.svg" width="100%" />\n' + '\n' + '<h1 id="top" align="center">Hi, I\'m [Write Your Name here] <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1></h1>\n' + '\n' + `<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=built-different-13&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Views" height="21" /> 
+  <img src="https://img.shields.io/github/followers/devshriram?label=Followers&color=0e75b6&style=flat-square" alt="Followers" height="21" />
+  <img src="https://img.shields.io/github/stars/devshriram?label=Stars&color=0e75b6&style=flat-square" alt="Stars" height="21" />
+  <img src="https://img.shields.io/github/forks/devshriram/Software-Engineering?label=Forks&color=0e75b6&style=flat-square" alt="Forks" height="21" />
+  <img src="https://img.shields.io/github/watchers/devshriram/Software-Engineering?label=Watchers&style=flat-square&color=0e75b6" alt="Watchers" height="21" />
+</p>\n` + '\n').appendTo(outer);
+
+    }
+
+
+    $('#button').click(fetchUserDetails);
 
     function fetchUserDetails() {
 
@@ -218,5 +239,3 @@ var outer = $('#content').css({
     }); 
     
 }
-
-$('#button').click(fetchUserDetails);
