@@ -46,9 +46,7 @@
     width: "150px",
   }).appendTo(outer);
 
-    }
-
-      $(document).ready(function() {
+   $(document).ready(function() {
     $('#copyBtn').click(function() {
         // 1. Get the value from the input field
         var textToCopy = $('#content').text();
@@ -61,6 +59,9 @@
         });
     });
 });
+
+    }
+
 
 
     $('#button').click(fetchUserDetails);
