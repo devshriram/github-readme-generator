@@ -27,12 +27,12 @@
         overflow: "auto",
         padding: "10px",
         whiteSpace: "pre-wrap",
-    }).text('<img src="https://raw.githubusercontent.com/BEPb/BEPb/5c63fa170d1cbbb0b1974f05a3dbe6aca3f5b7f3/assets/Bottom_up.svg" width="100%" />\n' + '\n' + `<h1 id="top" align="center">Hi, I\'m ${name} <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>\n` + '\n' + `<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=${username}&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Views" height="21" /> 
-  <img src="https://img.shields.io/github/followers/${username}?label=Followers&color=0e75b6&style=flat-square" alt="Followers" height="21" />
-  <img src="https://img.shields.io/github/stars/${username}?label=Stars&color=0e75b6&style=flat-square" alt="Stars" height="21" />
-  <img src="https://img.shields.io/github/forks/${username}/Software-Engineering?label=Forks&color=0e75b6&style=flat-square" alt="Forks" height="21" />
-  <img src="https://img.shields.io/github/watchers/${username}/Software-Engineering?label=Watchers&style=flat-square&color=0e75b6" alt="Watchers" height="21" />
+    }).text('<img src="https://raw.githubusercontent.com/BEPb/BEPb/5c63fa170d1cbbb0b1974f05a3dbe6aca3f5b7f3/assets/Bottom_up.svg" width="100%" />\n' + '\n' + `<h1 id="top" align="center">Hi, I\'m [Enter your name here] <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1></h1>\n` + '\n' + `<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=devshriram&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Views" height="21" /> 
+  <img src="https://img.shields.io/github/followers/devshriram?label=Followers&color=0e75b6&style=flat-square" alt="Followers" height="21" />
+  <img src="https://img.shields.io/github/stars/devshriram?label=Stars&color=0e75b6&style=flat-square" alt="Stars" height="21" />
+  <img src="https://img.shields.io/github/forks/devshriram/Software-Engineering?label=Forks&color=0e75b6&style=flat-square" alt="Forks" height="21" />
+  <img src="https://img.shields.io/github/watchers/devshriram/Software-Engineering?label=Watchers&style=flat-square&color=0e75b6" alt="Watchers" height="21" />
   </p>\n` + '\n' + '<img width="100%" loading="lazy" src="https://github.com/SamirPaulb/SamirPaulb/blob/main/assets/rainbow-superthin.webp" />\n' + '\n' + '<h2><a id="about"></a><img src="https://user-images.githubusercontent.com/74038190/229223156-0cbdaba9-3128-4d8e-8719-b6b4cf741b67.gif" width="40"> About Me</h2>\n' + '\n' + '<img align="right" width="370" height="320" alt="Coding" src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif">\n' + '\n' + '- ⭐ I’m a `Software Engineer`.\n' + '- 🚀 Passionate about `Web Development`.\n' + '- 💡 Interested in contributing to `Open Source Projects`.\n' + '- 💬 Ask me about `Software Engineering`.\n' + '- 🎯 Focus on `Quality` over `Quantity`\n' + '- 🔄 Repeat `Brainstorming`, `Coding`, and `Debugging`.\n' + '- ✨ Enjoy my GitHub profile.\n' + '\n' + 
   '<img width="900" height="200" alt="Mario" src="https://user-images.githubusercontent.com/10498744/210012254-234538ff-d198-48aa-8964-37e6fd45d227.gif">' + '\n' + 
    '<h2><a id="skills"></a><img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="30"> Technical Skills</h2>\n' + '\n' + 
