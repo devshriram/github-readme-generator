@@ -110,24 +110,6 @@ Rather than only learning technologies through tutorials, I wanted to practice t
 Idea → Build → Deploy → Users → Feedback → Improve
 ```
 
-## 🧠 What I Learned
-
-Building this project helped me understand several practical concepts:
-
-* Working with third-party APIs
-* Handling asynchronous JavaScript
-* Working with API responses
-* Dynamic DOM creation
-* JavaScript variable scope
-* Template literals and dynamic content
-* jQuery DOM manipulation
-* Flexbox layouts
-* Clipboard API
-* Generating Markdown dynamically
-* Handling user input
-* Building a simple product from scratch
-* Deploying a web application
-
 ## 🛣️ Roadmap
 
 The current version is intentionally simple. Future improvements may include:
