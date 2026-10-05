@@ -102,14 +102,6 @@ Creating a good GitHub profile README can be surprisingly time-consuming, especi
 
 I built this project to make that process faster and simpler.
 
-More importantly, this project is part of my journey toward becoming a better **full-stack engineer and independent product builder**.
-
-Rather than only learning technologies through tutorials, I wanted to practice the complete process:
-
-```text
-Idea → Build → Deploy → Users → Feedback → Improve
-```
-
 ## 🛣️ Roadmap
 
 The current version is intentionally simple. Future improvements may include:
